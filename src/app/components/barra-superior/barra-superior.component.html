@@ -1,0 +1,32 @@
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+<div id="toolbar">
+  <p>
+    <mat-toolbar color="primary">
+      <span>
+        <mat-icon id="icon" aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+
+        Bienvenido a Solar Tracker
+        <img id="sol" src="assets/10.png" />
+      </span>
+      <nav id="menu">
+        <ul>
+          <li>
+            <button [routerLink]="['/inicio']" mat-button>Inicio</button>
+          </li>
+
+          <li>
+            <button [routerLink]="['/creditos']" mat-button>Créditos</button>
+          </li>
+          <li>
+            <button [routerLink]="['/MovimientoSol']" mat-button>Empezar</button>
+          </li>
+        </ul>
+      </nav>
+      <div class="clearfix"></div>
+    </mat-toolbar>
+  </p>
+</div>

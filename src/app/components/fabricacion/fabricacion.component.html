@@ -1,0 +1,83 @@
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+<div>
+  <i id="icon1" class="material-icons">build</i>
+  <h2 id="fabri">El proceso de elaboracion de Hardware y Sofware fue complejo🥱 te gusttaria saber como fue?</h2>
+</div>
+
+
+<mat-horizontal-stepper>
+  <mat-step label="Desarrollo de Hardware">
+    <div id="texto1">
+      <h3 id="parr1">
+        Para resumir, fue un desafio bastante grande😥: <br />
+        Se inicia con la adqusicion d e los componenetes y demasa cosas, y luego a armarlo! Si sabes de Electrónica, te resultara muy fácil!
+      </h3>
+      <img id="img1" src="https://www.realsystems.com.mx/web/image/2943?access_token=d70da670-fee2-45fd-b608-e90f49db92d2" />
+      <h2 id="contenido1">
+        Para iniciar todo, lo primero que necesitas es lo siguiente: <br />
+        <mat-list  role="list">
+         <mat-list-item   role="listitem">Servo Motores</mat-list-item>
+         <mat-list-item role="listitem">Sensores Foto sinteticos</mat-list-item>
+         <mat-list-item role="listitem">Resistencias LDR</mat-list-item>
+         <mat-list-item role="listitem">Cable USB de conexion de placa a PC</mat-list-item>
+         <mat-list-item role="listitem">Cables Conductores</mat-list-item>
+         <mat-list-item role="listitem">Palca Arduino Uno</mat-list-item>
+        </mat-list>
+
+      </h2>
+    </div>
+      <button id="back" color="primary" mat-raised-button matStepperPrevious>Atras</button>
+      <button id="next" color="primary" mat-raised-button matStepperNext>Siguiente</button>
+</mat-step>
+  <mat-step label="Desarrollo Back-End">
+    <h3 id="parr2">
+      <i id="icon2" class="material-icons">developer_board</i>
+      Para el desarrollo del Sofware que controla este dispositivo se ha usado JavaScript<br />
+      Por dentro aplicando las librerias Jhonny-five y Firmata-Party para poder controlar la placa con JS
+      <img id="img2" src="https://lh3.googleusercontent.com/proxy/--HSDVLM6TWBRgKxQQ5B6-aTWLt-QQI1mhc2TMr2FqUnlwTvLMljCPMQ29TUizTjOkqazSRAv1EWsTIOthbl3uY2GIERyMh-eD9nrzL1GTN9ZiY" />
+
+    </h3>
+    
+    <button id="back2" color="primary" mat-raised-button matStepperPrevious>Atras</button>
+    <button id="next2" color="primary" mat-raised-button matStepperNext>Siguiente</button>
+  </mat-step>
+  <mat-step label="Desarollo Front-End">
+
+    <h3 id="parr2">
+      Para el desarrollo Font-End, hemos  imlementado el uso de Angular 10 <br />
+      A eso le añadimos el uso de angular material para hacerla responsive
+    </h3>
+    <img id="img3" src="https://material.angular.io/assets/img/site-preview.png" />
+
+    <button id="back3" color="primary" mat-raised-button matStepperPrevious>Back</button>
+  </mat-step>
+  
+</mat-horizontal-stepper>
+
+
+
+
+
+
+
+<!--<div>
+  <i id ="icon1"class="material-icons">build</i>
+  <h2 id="fabri">El proceso de elaboracion de Hardware y Sofware fue complejo🥱 te gusttaria saber como fue?</h2>
+</div>
+
+<div id="texto1">
+  <h3 id="parr1">
+    Para resumir, fue un desafio bastante grande😥: <br />
+    Se inicia con la adqusicion d e los componenetes y demasa cosas, y luego a armarlo!
+  </h3>
+  <img id="img1" src="https://www.realsystems.com.mx/web/image/2943?access_token=d70da670-fee2-45fd-b608-e90f49db92d2" />
+
+  <div id="text2">
+    <i id="icon2" class="material-icons">app_settings_alt</i>
+    <h2>Te gustaria sabes mas del proceso de fabricacion?<br /> Hechale un ojo!</h2>
+
+    <button [routerLink]="['/fabricacion']" id="boton" mat-raised-button color="primary">Ver Fabricacion</button>
+  </div>
+</div>
+-->

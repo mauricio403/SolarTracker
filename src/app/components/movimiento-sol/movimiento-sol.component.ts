@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { CargarScriptsService } from './../../cargar-scripts.service'
 @Component({
   selector: 'app-movimiento-sol',
   templateUrl: './movimiento-sol.component.html',
@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MovimientoSolComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _CargaScripts: CargarScriptsService) {
+    _CargaScripts.Carga(["js/index"])
+  }
 
   ngOnInit(): void {
   }

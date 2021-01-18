@@ -14,7 +14,15 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
-import { MatSnackBarModule } from '@angular/material/snack-bar'; 
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatStepperModule } from '@angular/material/stepper';
+import { MatListModule } from '@angular/material/list'; 
+import { MatLineModule } from '@angular/material/core';
+import { MatFormField } from '@angular/material/form-field';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDatepickerModule } from '@angular/material/datepicker'; 
 
 @NgModule({
   
@@ -34,7 +42,16 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatCardModule,
     MatInputModule,
     MatSelectModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatSidenavModule,
+    MatStepperModule,
+    MatLineModule,
+    MatListModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatDatepickerModule
+    
    
   ],
   exports: [
@@ -52,7 +69,17 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatCardModule,
     MatInputModule,
     MatSelectModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatSidenavModule,
+    MatStepperModule,
+    MatLineModule,
+    MatListModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatDatepickerModule
+
+   
     
            ]
 })

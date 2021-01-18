@@ -1,0 +1,64 @@
+<div id="formulario">
+  <h2>Ingresa los datos de tu placa</h2>
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Escribe la marca de tu placa</mat-label>
+      <input matInput placeholder="Arduino Pro Mini" value="" #placa>
+    </mat-form-field>
+
+  </form>
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Modelo de tu placa </mat-label>
+      <input matInput placeholder="Arduino Pro Mini" value="" #valor2>
+    </mat-form-field>
+    <h4>Elije el numero de Pines de tu Placa</h4>
+    <mat-form-field appearance="fill">
+      <mat-label>Número de Pines</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let valor of valores" [value]="valor.value">
+          {{valor.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+  </form>
+  <button color="primary" mat-raised-button (click)="openSnackBar(placa.value, valor2.value)">Guardar informacion</button>
+
+  <h2>Todo listo? Dale en Empezar</h2>
+</div>
+
+
+
+<div id="formulario2" class="center">
+  <h2>Registrate y recibe noticias!</h2>
+  <mat-vertical-stepper>
+
+    <mat-step label="Correo Electrónico">
+      <mat-form-field class="example-full-width">
+        <mat-label>Escribe tu correo </mat-label>
+        <input matInput placeholder="xxx@zzz.com" value="" #valor2>
+      </mat-form-field>
+
+    </mat-step>
+    <mat-step label="Nombres">
+      <mat-form-field class="example-full-width">
+        <mat-label>Imgresa tus nombres</mat-label>
+        <input matInput placeholder="Elsa Patito" value="" #valor2>
+      </mat-form-field>
+    </mat-step>
+
+    <mat-step label="Apellidos">
+      <mat-form-field class="example-full-width">
+        <mat-label>Imgresa tu apellido</mat-label>
+        <input matInput placeholder="Ledezma Madas" value="" #valor2>
+      </mat-form-field>
+    </mat-step>
+    <mat-step label="Nac">
+     
+
+    </mat-step>
+
+  </mat-vertical-stepper>
+
+</div>

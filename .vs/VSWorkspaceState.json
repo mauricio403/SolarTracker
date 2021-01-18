@@ -4,11 +4,10 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\components",
-    "\\src\\app\\components\\app-material",
-    "\\src\\app\\components\\dialogo",
-    "\\src\\app\\components\\footer",
-    "\\src\\assets"
+    "\\src\\app\\components\\movimiento-sol",
+    "\\src\\assets",
+    "\\src\\assets\\js"
   ],
-  "SelectedNode": "\\src\\app\\components\\footer\\footer.component.scss",
+  "SelectedNode": "\\src\\app\\components\\movimiento-sol\\movimiento-sol.component.html",
   "PreviewInSolutionExplorer": false
 }

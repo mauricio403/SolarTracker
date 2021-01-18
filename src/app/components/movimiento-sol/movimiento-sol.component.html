@@ -1,1 +1,39 @@
 <p>movimiento-sol works!</p>
+
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Carrera</title>
+  <style>
+    .body {
+      padding-top: 40px;
+      padding-left: 40px;
+    }
+
+    img#coche1 {
+      position: absolute;
+    }
+
+    img#coche2 {
+      position: absolute;
+      margin-top: 10px;
+    }
+
+    .zona_boton {
+      text-align: center;
+      width: 100%;
+      margin-top: 240px;
+    }
+  </style>
+</head>
+<body>
+  <div class="body">
+    <img id="coche1" src="" alt="Este es mi coche">
+    <img id="coche2" src="" alt="Este es mi oponente">
+    <div class="zona_boton">
+      <input type="button" onclick='setInterval("correr()",60)' value="A CORRER!">
+
+    </div>
+  </div>
+ 
+</body>

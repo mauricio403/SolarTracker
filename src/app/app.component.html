@@ -3,105 +3,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
 
+<app-barra-superior></app-barra-superior>
 
-<div id="toolbar">
-  <p>
-    <mat-toolbar color="primary">
-      <span>
-        <mat-icon id="icon" aria-hidden="false" aria-label="Example home icon">home</mat-icon>
-
-        Bienvenido a Solar Tracker
-        <img id="sol" src="assets/10.png" />
-      </span>
-      <nav id="menu">
-        <ul>
-          <li>
-            <button mat-button>Inicio</button>
-          </li>
-          <li>
-            <button mat-button>Mision y Vision</button>
-          </li>
-          <li>
-            <button mat-button>Créditos</button>
-          </li>
-        </ul>
-      </nav>
-      <div class="clearfix"></div>
-    </mat-toolbar>
-  </p>
-</div>
-
-<h1 id="texto">Listo para poner en marcha tu solar tracker?</h1>
-
-<div id="carrusel">
-  <ngb-carousel>
-    <ng-template *ngFor="let imagen of imagenes" ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img src="{{imagen.img}}" alt="Random first slide">
-      </div>
-      <div class="carousel-caption">
-        <h3>{{imagen.name}}</h3>
-        <p>{{imagen.desc}}</p>
-      </div>
-    </ng-template>
-  </ngb-carousel>
+<div class="center">
+  <section id="content">
+    <router-outlet></router-outlet>
+  </section>
 </div>
 
 
+<app-footer></app-footer>
 
 
-<div id="formulario">
-  <h2>Dinos los datos de tu placa</h2>
-  <form class="example-form">
-    <mat-form-field class="example-full-width">
-      <mat-label>Modelo de tu placa</mat-label>
-      <input matInput  placeholder="Arduino Pro Mini" value="" #placa>
-    </mat-form-field>
-
-  </form>
-  <form class="example-form">
-    <mat-form-field class="example-full-width">
-      <mat-label>Modelo de </mat-label>
-      <input matInput placeholder="Arduino Pro Mini" value="" #valor2>
-    </mat-form-field>
-    <h4>Elije el numero de Pines de tu Placa</h4>
-    <mat-form-field appearance="fill">
-      <mat-label>Número de Pines</mat-label>
-      <mat-select>
-        <mat-option *ngFor="let valor of valores" [value]="valor.value">
-          {{valor.viewValue}}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
-    
-  </form>
-  <button color="primary" mat-stroked-button (click)="openSnackBar(placa.value, valor2.value)">Guardar informacion</button>
-
-  
 
 
-</div>
 
 
-<div id="dialogo">
-  <app-dialogo></app-dialogo>
-</div>
 
 
-<br />
 
-<div id="pie">
-  <footer class="clearfix" id="foot">
-   
-   
-    <p>
-      &copy; Solar tracker 2021 Todos los derechos reservados
-    </p>
-
-  </footer>
-  
-</div>
-<div class="clearfix"></div>
 
 
 
