@@ -1,13 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 
 //inicio servicio
-import { CargarScriptsService } from './cargar-scripts.service';
+
 
 //fin servicio
 
 import { AppComponent } from './app.component';
 import { routing, appRoutingProviders } from './app.routing';
+import { CoordinatesModule } from 'angular-coordinates';
+import { TransformationType, Direction } from 'angular-coordinates';
+import localEs from '@angular/common/locales/es';
+import { registerLocaleData } from '@angular/common';
+registerLocaleData(localEs, 'es');
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { AppMaterialModule } from './components/app-material/app-material.module';
@@ -41,6 +46,7 @@ import { MenuLateralComponent } from './components/menu-lateral/menu-lateral.com
     MenuLateralComponent,
     
     
+    
   ],
   imports: [
     BrowserModule,
@@ -48,10 +54,14 @@ import { MenuLateralComponent } from './components/menu-lateral/menu-lateral.com
     AppMaterialModule,
     NgbModule,
     FormsModule,
+    CoordinatesModule,
     routing
     
   ],
-  providers: [appRoutingProviders, CargarScriptsService],
-  bootstrap: [AppComponent]
+  providers: [
+    appRoutingProviders,
+    { provide: LOCALE_ID, useValue: 'es'}
+  ],
+  bootstrap: [AppComponent,]
 })
 export class AppModule { }

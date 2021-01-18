@@ -1,30 +1,6 @@
-<p>movimiento-sol works!</p>
-
-
 <head lang="en">
   <meta charset="UTF-8">
   <title>Carrera</title>
-  <style>
-    .body {
-      padding-top: 40px;
-      padding-left: 40px;
-    }
-
-    img#coche1 {
-      position: absolute;
-    }
-
-    img#coche2 {
-      position: absolute;
-      margin-top: 10px;
-    }
-
-    .zona_boton {
-      text-align: center;
-      width: 100%;
-      margin-top: 240px;
-    }
-  </style>
 </head>
 <body>
   <div class="body">
@@ -35,5 +11,60 @@
 
     </div>
   </div>
- 
+
 </body>
+
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <i id="iconos" class="material-icons">schedule</i>
+    <mat-card-title>Datos Generales</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="https://lh3.googleusercontent.com/oQv8zCUeXZiPBWFKY_-IKZT5KYSkLPFC7QCHGBJMGe-SzW8OK0zQ_oV-OqW-r8avupc" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <h3>
+      Fecha: {{titulo | date:'fullDate'}}<br />
+      Hora : {{titulo | date:'shortTime'}}
+    </h3>
+  </mat-card-content>
+  
+</mat-card>
+
+<mat-card id="card2" class="example-card">
+  <mat-card-header>
+    <i id="iconos" class="material-icons">light_mode</i>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Ángulo de posicionamiento del sol</mat-card-title>
+    
+  </mat-card-header>
+  <img mat-card-image src="https://okdiario.com/img/2018/03/14/distancia-tierra-sol.jpg" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      La posición del sol, según el dia y fecha es:  {{value}}
+
+    </p>
+  </mat-card-content>
+  
+</mat-card>
+
+
+<mat-card id="card3" class="example-card">
+  <mat-card-header>
+    <i id="iconos"class="material-icons">flash_on</i>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Energía recibida del sensor</mat-card-title>
+  
+  </mat-card-header>
+  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      La cantidad de energía que recibe el panel es de: 
+      
+    </p>
+  </mat-card-content>
+ 
+</mat-card>
+
+
+

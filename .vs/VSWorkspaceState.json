@@ -4,10 +4,12 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\components",
+    "\\src\\app\\components\\app-material",
+    "\\src\\app\\components\\fabricacion",
+    "\\src\\app\\components\\formulario",
     "\\src\\app\\components\\movimiento-sol",
-    "\\src\\assets",
-    "\\src\\assets\\js"
+    "\\src\\assets"
   ],
-  "SelectedNode": "\\src\\app\\components\\movimiento-sol\\movimiento-sol.component.html",
+  "SelectedNode": "\\src\\app\\components\\movimiento-sol\\movimiento-sol.component.ts",
   "PreviewInSolutionExplorer": false
 }
