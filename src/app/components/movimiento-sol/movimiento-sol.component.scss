@@ -42,12 +42,32 @@ img#coche2 {
 #iconos {
   color: #2196F3;
 }
-#solsito{
+
+ #solsito{
   position: relative;
   width: 300px;
   height: 300px;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-name: slidein;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+}
+
+.slidein {
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left:50%;
+    width:30%
+  }
+
+  to {
+   margin-left:0%;
+   width:10%;
+ }
 }
