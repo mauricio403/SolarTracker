@@ -30,14 +30,24 @@ img#coche2 {
 #card2 {
   position: absolute;
   left: 500px;
-  top: 385px;
+  top: 370px;
+  max-width: 400px;
 }
 #card3 {
   position: absolute;
   left: 1000px;
-  top: 385px;
+  top: 380px;
 }
 
 #iconos {
   color: #2196F3;
+}
+#solsito{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }

@@ -1,8 +1,9 @@
+import { HttpClient } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { LOCALE_ID, NgModule } from '@angular/core';
 
 //inicio servicio
-
+import{ HttpClientModule} from'@angular/common/http';
 
 //fin servicio
 
@@ -27,6 +28,7 @@ import { FormularioComponent } from './components/formulario/formulario.componen
 import { InicioComponent } from './components/inicio/inicio.component';
 import { FabricacionComponent } from './components/fabricacion/fabricacion.component';
 import { MenuLateralComponent } from './components/menu-lateral/menu-lateral.component';
+import { from } from 'rxjs';
 
  
 
@@ -55,6 +57,7 @@ import { MenuLateralComponent } from './components/menu-lateral/menu-lateral.com
     NgbModule,
     FormsModule,
     CoordinatesModule,
+    HttpClientModule,
     routing
     
   ],

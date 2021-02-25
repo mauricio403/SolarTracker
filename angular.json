@@ -32,7 +32,9 @@
               "src/styles.scss",
               "src/custom.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./src/assets/index.js"
+            ]
           },
           "configurations": {
             "production": {

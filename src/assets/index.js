@@ -1,4 +1,5 @@
-// JavaScript source code
+
+
 //seleccionar imágenes
 var coche1 = document.getElementById("coche1");
 var coche2 = document.getElementById("coche2");
