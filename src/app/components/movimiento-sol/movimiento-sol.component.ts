@@ -10,22 +10,32 @@ import { Component, OnInit } from '@angular/core';
   providers: [ArduinoService]
 })
 export class MovimientoSolComponent implements OnInit {
-
+  data = {};
   value = "10°0'0 N ";
   titulo = new Date();
-  constructor( private _arduinoService: ArduinoService) {
-   
+  constructor(private _arduinoService: ArduinoService) {
+
+  }
+  ngOnInit(): void {
+    this.obtenerDatosArduino();
   }
 
-  ngOnInit(): void {
-    this._arduinoService.getDatosArduino().subscribe(
-      response =>{
-        console.log(response)
-      },
-      error =>{
-        console.log(error)
-      }
-    );
+  obtenerDatosArduino() {
+    setInterval(() => {
+      this._arduinoService.getDatosArduino().subscribe(
+        response => {
+          console.log(response.ldrs)
+          console.log(response.servos)
+          console.log(response.promedios)
+          this.data = response
+        },
+        error => {
+          console.log(error)
+        }
+      );
+
+    }, 1000)
   }
+
 
 }
